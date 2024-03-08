@@ -140,5 +140,43 @@ function validateForm(){
         return returnVal;
     }
 
+    var worktime = document.forms['myForm']['startTime'].value;
+
+    if(worktime.length < 10){
+        alert("Please valid prefered work schedule");
+        returnVal = false;
+        return returnVal
+    }
+
+    var locate = document.forms['myForm']['reloc'].value;
+
+    if(locate.length === 0){
+        alert("Please specify your willingness to relocate");
+        returnVal = false;
+        return returnVal
+    }
+    else if(locate != 'yes' && locate !='no'){
+        alert("Please answer in yes or a no");
+        returnVal = false;
+        return returnVal
+    }
+
+    var formData = new FormData(document.getElementById('myForm'));
+
+    // Create table rows dynamically
+    var tableBody = document.getElementById('tableBody');
+    tableBody.innerHTML = ''; // Clear existing table rows
+
+    formData.forEach(function(value, key) {
+        var row = document.createElement('tr');
+        var fieldCell = document.createElement('td');
+        fieldCell.textContent = key;
+        var valueCell = document.createElement('td');
+        valueCell.textContent = value;
+        row.appendChild(fieldCell);
+        row.appendChild(valueCell);
+        tableBody.appendChild(row);
+    });
+
     return returnVal;
 }
