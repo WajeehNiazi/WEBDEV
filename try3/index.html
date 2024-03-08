@@ -9,7 +9,7 @@
 <body>
     <h1 style="text-align: center;">Job Application</h1>
     <div class="form">
-        <form id="faram" action="/myaction.php" name="myForm" onSubmit="return validateForm" method="post">
+        <form id="faram" name="myForm" onSubmit="return validateForm()" method="post">
             <div class="personalInfo">
                 <h4>Personal Infomration</h4>
                 <label for="fname">First Name</label>
@@ -21,7 +21,7 @@
                 <label for="pno">Phone Number</label>
                 <input type="tel" id="pno" name="phonenumber" placeholder="Your 11-digit number(without dashes)">
 
-                <label for="email">Email Address</label>
+                <label for="eid">Email Address</label>
                 <input type="email" id="eid" name="emailaddress" placeholder="E.g. example@email.com">
 
                 <label for="street">Street</label>
@@ -41,9 +41,103 @@
                 <label for="myfile">Select a file:</label>
                 <input type="file" id="myfile" name="myfile">
 
-                
+                <label for="cletter">Cover Letter</label>
+                <textarea id="cletter" name="coverletter" rows="20" cols="70"></textarea>
             </div>
+            <div class="education">
+                <h4>Education</h4>
+                <label for="level">Highest Level of Education</label>
+                <select id="level" name="levelofedu">
+                    <option value="">Select an option</option>
+                    <option value="Masters">Masters</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="HSSC">HSSC</option>
+                    <option value="SSC">SSC</option>
+                </select>
+
+                <label for="sname">Name of School/University</label>
+                <input type="text" id="sname" name="schoolname" placeholder="Name of the school/university..">
+
+                <label for="major">Major/Area of Study</label>
+                <input type="text" id="major" name="major" placeholder="Your area of study">
+
+                <label for="yearofgrad">Graduation year</label>
+                <input type="number" id="yearofgrad" name="garduationyear" placeholder="E.g. 2025">
+            </div>
+            <div class="employmentHistory">
+                <h4>Employment History</h4>
+
+                <label for="prevjob">Previous Job Titles</label>
+                <input type="text" name="prevjobtitles" id="prevjob1" required>
+                <input type="text" name="prevjobtitles" id="prevjob2">
+
+                <div class="jobinfo">
+                    <h4>Company Names</h4>
+                    <label for="compname1">Company 1</label><br>
+                    <input type="text" name="companynames" id="compname1" required>
+                    <label for="start1">From:</label><input type="date" id="start1" name="startdate">
+                    <label for="end1">To:</label><input type="date" id="end1" name="enddate"><br>
+                    <label for="compname2">Company 2</label><br>
+                    <input type="text" name="companynames" id="compname2">
+                    <label for="start2">From:</label><input type="date" id="start2" name="startdate">
+                    <label for="end2">To:</label><input type="date" id="end2" name="enddate"><br>
+                </div>
+            </div>
+            <div class="skills">
+                <h4>Relevant Skills</h4>
+                <input type="text" name="skills" id="skills">
+                
+                <label for="myfile">Add Relevant Certificates</label>
+                <input type="file" id="myfile" name="myfile">
+                <input type="file" id="myfile" name="myfile">
+                <input type="file" id="myfile" name="myfile">
+                <input type="file" id="myfile" name="myfile">
+            </div>
+            <div class="availability">
+                <h4>Availability</h4>
+
+                <label for="starting">Start Date</label>
+                <input type="date" id="starting" name="startingdate" style="width: 200px;">
+
+                <label for="startTime">Prefered Schedule</label>
+                <input type="text" id="startTime" name="schedule" style="width: 300px;" placeholder="E.g. 9 to 5 (8 hours)">
+
+                <label for="reloc">Willing to Relocate?</label>
+                <input type="text" id="reloc" name="relocate" style="width: 300px;" placeholder="E.g. Yes or No">
+            </div>
+            <div class="references">
+                <h4>Refrences</h4>
+
+                <label for="refname">Reference Name</label>
+                <input type="text" id="refname" name="refernceName">
+
+                <label for="refpno">Phone Number</label>
+                <input type="text" id="refpno" name="refcontact">
+
+                <label for="refeid">Email Address</label>
+                <input type="text" id="refeid" name="refcontact">
+
+                <label for="refRel">Relation to Applicant</label>
+                <input type="text" id="refRel" name="refrelation">
+            </div>
+            <div class="questions">
+                <h4>Questions</h4>
+
+                <label for="ques">Why do you want to work for this company</label>
+                <textarea id="ques" name="question" rows="10"></textarea>
+            </div>
+            <div class="consent">
+                <h4>Consent and Agreement</h4>
+                <div class="inner">
+                    <input type="checkbox" id="condition1" name="condition1" value="t&c" required>
+                    <label for="condition1"> Your agree to our terms and conditions</label><br>
+                    <input type="checkbox" id="condition2" name="condition2" value="t&c" required>
+                    <label for="condition2"> Your agree to our Privacy Policy</label><br>
+                </div>
+            </div>
+            <input type="submit" value="Submit" id="submitbtn">
         </form>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

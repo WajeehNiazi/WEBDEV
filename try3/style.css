@@ -2,18 +2,85 @@
     background-color: lightgray;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .personalInfo{
     display: flex;
     flex-direction: column;
     width: 40%;
+    flex: 0 0 50%;
 }
 
 .resume{
+    display: flex;
+    flex-direction: column;
     margin-left: 30px;
 }
 
-input[type="text"], input[type="tel"], input[type="email"]{
+.education{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 40%;
+}
+
+.employmentHistory{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 40%;
+    margin-left: 30px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%
+}
+
+.availability{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    margin-left: 30px;
+}
+
+.references{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%
+}
+
+.consent{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 20%;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#submitbtn{
+    margin-top: 30px;
+    height: 30px;
+    width: 50%;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+#submitbtn:hover{
+    background-color: #45a049;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select{
     margin-bottom: 10px;
 }
+
