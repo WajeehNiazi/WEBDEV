@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+  }
+  
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .rectangle {/* Takes up remaining space */
+    height: 400px;
+    width: 200px; /* Adjust height as needed */
+    background-color: #ab1f1f; /* Color of the vertical rectangle */
+  }
+  
+  .square {
+    width: 200px; /* Fixed width for squares */
+    height: 200px; /* Fixed height for squares */
+    background-color: #ffcc00; /* Color of the squares */
+  }
+  

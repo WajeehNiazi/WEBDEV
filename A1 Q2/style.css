@@ -1,0 +1,235 @@
+*{
+    background-color: #F5F7FAFA;
+    margin: 0px;
+}
+
+#navbar{
+    margin-top: 10px;
+    height: 115px;
+    z-index: 1;
+}
+
+#uppernav{
+    display: flex;
+    height: 43px;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: space-between;
+}
+
+#lowernav{
+    display: flex;
+    height: 38px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: height 0.5s ease;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    z-index: 1;
+}
+
+#logo{
+    height: 38px;
+    width: 240px;
+    background-image: url(PeoplePerHour.com_2018_logo.png);
+    background-size: cover;
+}
+
+#dropbtn{
+    height: 38px;
+    width: 142px;
+    cursor: pointer;
+    border: none
+}
+
+#dropbtn2{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+}
+
+#links{
+    display: flex;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#drop1{
+    position: relative;
+    display: inline-block;
+}
+
+#drop2{
+    position: relative;
+    display: inline-block;
+}
+
+#drop3{
+    position: relative;
+    display: inline-block;
+}
+
+#drop4{
+    position: relative;
+    display: inline-block;
+}
+
+#drop5{
+    position: relative;
+    display: inline-block;
+}
+
+#drop6{
+    position: relative;
+    display: inline-block;
+}
+
+#drop7{
+    position: relative;
+    display: inline-block;
+}
+
+#drop8{
+    position: relative;
+    display: inline-block;
+}
+
+#drop9{
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-hidden{
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content2 a:hover {background-color: #f1f1f1}
+.drop-content a:hover {background-color: #f1f1f1}
+
+#dropdown:hover  .dropdown-content {
+    display: block;
+}
+
+#dropdown-hidden:hover  .dropdown-content2 {
+    display: block;
+}
+#lowernavcontent{
+    display: flex;
+}
+
+@media only screen and (max-width: 1024px){
+    #links {
+        display: none;
+    }
+
+    #dropdown-hidden{
+        position: relative;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    #lowernavcontent {
+        margin-left: calc(70px + 5 * ((100vw - 400px) / 200));
+    } 
+    #lowernav {
+        height: auto; /* Adjust the height as needed */
+    }
+    .box1, .box2{
+        margin-top: 100px;
+    }
+}
+
+
+
+.mainbody{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1{
+    height: 850px;
+    width: 800px;
+    border: 2px solid black;
+    background-color: pink;
+    flex: 1;
+}
+
+.box2{
+    height: 850px;
+    width: 800px;
+    border: 2px solid black;
+    background-image: url("cat_photo.jpg");
+    background-size: cover;
+    flex: 1;
+}
+
+@media screen and (max-width: 864px) {
+    .mainbody{
+        flex-direction: column-reverse;
+        height: 1700px;
+    }
+    .box1{
+        margin-top: 0px;
+    }
+}

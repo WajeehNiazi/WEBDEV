@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+}
+
+#flex-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#flex-container2{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#flex-container3{
+    margin-left: 25px;
+    margin-right: 10px;
+    padding-right: 25px;
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+}
+
+#sidePanel{ 
+    width: 20%;
+    border: 2px solid grey;
+    background-color: rgb(54, 69, 79);
+    background-image: url();
+    background-size: cover;
+    display: inline-block;
+    color: white;
+}
+
+#photo{
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url("MyPhoto.png");
+    background-size: cover;
+}
+
+#info{
+    margin: 25px;
+    width: 70%;
+}
+
+#box1{
+    height: 100px;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    background-color: white;
+    color: rgb(54, 69, 79);
+    font-size:xx-large;
+}
+
+#box2{
+    height: 100px;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    background-color: white;
+    color: rgb(54, 69, 79);
+}
+
+#skills{
+    color: rgb(54, 69, 79);
+    font-size: x-large;
+}
+
+#experience{
+    color: rgb(54, 69, 79);
+    font-size: x-large;
+}
+
+#projs{
+    color: rgb(54, 69, 79);
+    font-size: x-large;
+}
+
+.skills{
+    width: 40%;
+}
+
+.projects{
+    margin-top: 80px;
+    width: 100%;
+}

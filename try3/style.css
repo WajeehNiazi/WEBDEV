@@ -1,0 +1,19 @@
+#faram{
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+}
+
+.personalInfo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.resume{
+    margin-left: 30px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"]{
+    margin-bottom: 10px;
+}

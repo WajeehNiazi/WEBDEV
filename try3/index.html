@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job Application</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Job Application</h1>
+    <div class="form">
+        <form id="faram" action="/myaction.php" name="myForm" onSubmit="return validateForm" method="post">
+            <div class="personalInfo">
+                <h4>Personal Infomration</h4>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your Fist Name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+
+                <label for="pno">Phone Number</label>
+                <input type="tel" id="pno" name="phonenumber" placeholder="Your 11-digit number(without dashes)">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="eid" name="emailaddress" placeholder="E.g. example@email.com">
+
+                <label for="street">Street</label>
+                <input type="text" id="street" name="street" placeholder="Your Street Address..">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="E.g. Lahore">
+
+                <labal for="state">State</labal>
+                <input type="text" id="state" name="state" placeholder="E.g. Punjab">
+
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" name="zipcode" placeholder="Your city ZIP Code">
+            </div>
+            <div class="resume">
+                <h4>Upload resume</h4>
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile">
+
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>

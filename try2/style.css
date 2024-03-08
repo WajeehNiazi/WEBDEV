@@ -1,0 +1,428 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #F5F7FAFA;
+}
+
+.navbar{
+    display: flex;
+    background-color: #F5F7FAFA;
+    height: 77px;
+    width: 100%;
+}
+
+.uppernavbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navcontent{
+    display: flex;
+    margin-right: 30px;
+}
+
+.navcontent #navlinks{
+    text-decoration: none;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.logo img{
+    padding-top: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+.dropdown .dropbtn{
+    font-size: 20px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 5%;
+    padding: 14px 16px;
+    background-color: #F5F7FAFA;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #F5F7FAFA;
+    min-width: 160px;
+    box-shadow: 0px 8ox 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: blueviolet;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a{
+    background-color: white;
+}
+
+.dropdown-hidden{
+    display: none;
+    transition: margin-right .5s;
+    padding-top: 15px;
+}
+
+.dropdown-hidden .dropbtn-hidden{
+    font-size: 20px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 5%;
+    padding: 14px 16px;
+    background-color: #F5F7FAFA;
+    cursor: pointer;
+}
+
+.dropdown-hiddencontent{
+    display: none;
+    position: absolute;
+    background-color: #F5F7FAFA;
+    min-width: 160px;
+    box-shadow: 0px 8ox 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-hiddencontent a {
+    float: none;
+    color: blueviolet;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-hiddencontent a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown-hidden:hover .dropdown-hiddencontent {
+    display: block;
+}
+
+.dropdown-hiddencontent a{
+    background-color: white;
+}
+
+.dropbtn-hidden:hover{
+    background-color: whitesmoke;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: blueviolet;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 1024px){
+    .dropdown{
+        display: none;
+    }
+    #navlinks{
+        display: none;
+    }
+    #vertline{
+        display: none;
+    }
+    #main{
+        display: block;
+    }
+    .sidebar{
+        display: block
+    }
+    .lowernavbar .subnav{
+        display: none;
+    }
+    .lowernavbar .subnav2{
+        display: block;
+    }
+
+    .lowernavbar .subnav2 .subnav{
+        display: block;
+    }
+}
+
+.lowernavbar {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    transition: margin-right .5s;
+}
+
+.lowernavbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav2 {
+    float: left;
+    overflow: hidden;
+    display: none;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.subnav2 .subnavbtn2 {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.lowernavbar a:hover, .subnav:hover .subnavbtn {
+    text-decoration: underline;
+    background-color: white;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    color: black;
+    text-decoration: none;
+}
+
+.subnav-content2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav-content2 a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: flex;
+    justify-content: center;
+}
+
+.subnav2:hover .subnav-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainbody{
+    display: flex;
+    flex-wrap: wrap;
+    transition: margin-right .5s;
+}
+
+.box1{
+    flex: 2;
+    text-align: center;
+}
+
+.box2{
+    flex: 1;
+    margin-right: 100px;
+}
+
+.mySlides{
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+.search-container input[type=text] {
+    padding: 0px;
+    margin-top: 150px;
+    margin-right: 0px;
+    font-size: 50px;
+    border: none;
+    background-color:whitesmoke;
+}
+  
+.search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 0px;
+    background: #ddd;
+    font-size: 45px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+  
+.search-container button:hover {
+    background: #ccc;
+}
